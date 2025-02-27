@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [time, setTime] = useState(0); // Time in seconds
-  const [running, setRunning] = useState(false); // Whether the stopwatch is running or not
+  const [running, setRunning] = useState(false); //  the stopwatch is running or not
 
   useEffect(() => {
     let interval;
@@ -39,8 +39,7 @@ function App() {
     <div className="stopwatch-container">
       <h1>Stopwatch</h1>
       <div className="time-display">
-        <h2>Time</h2>
-        <p>{formatTime(time)}</p>
+        <p>Time: {formatTime(time)}</p>
       </div>
       <div className="button-container">
         <button onClick={handleStartStop}>
